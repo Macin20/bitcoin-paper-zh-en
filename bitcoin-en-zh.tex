@@ -6,7 +6,7 @@
 \usepackage{graphics}% 图形支持
 \usepackage{parallel}% 提供双栏排版支持
 \usepackage[english]{babel}% 载入美式英语断字模板
-\usepackage{hyperref}
+\usepackage[backref]{hyperref}
 \usepackage{enumitem}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -21,6 +21,13 @@
 % 以下设置等宽字体为 Courier 的克隆体
 \setmonofont{TeX Gyre Cursor}
 
+% 取消超链接的颜色
+\hypersetup{
+hidelinks,
+colorlinks=true,
+linkcolor=black,
+citecolor=black
+}
 
 %%%%%% 设置代码块
 \lstset{
